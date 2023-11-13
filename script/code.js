@@ -7,6 +7,13 @@ function appendToDisplay(value){
 function clearDisplay() {
     display.value = 'display' ;
 }
+function calculateResults() {
+    try{
+        display.value = eval (display.value);
+       } catch (error) {
+        display.value = "Error"
+       }
+}
 
 
 
@@ -15,11 +22,4 @@ function clearDisplay() {
 
 
 
-// function calculateResults() {
-//     try{
-//         display.value = eval (display.value);
-//        } catch(error){
-//         display.value = 'Error'
-//        }
-// }
 
